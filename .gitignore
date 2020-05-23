@@ -1,3 +1,5 @@
 node_module/
+# Ignore de_retinut
 de_retinut.txt
+# Ignore node_modules folder
 node_modules
