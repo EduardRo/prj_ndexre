@@ -1,12 +1,20 @@
 const express = require('express');
+const connectDB = require('./config/db');
 
 const app = express();
 
+// Connect Database
+connectDB();
+
+// Init Middleware
+app.use(express.json({ exteded: false }));
+
 app.get('/', (req, res) =>
   res.json({
-    nume: 'Ionel',
-    prenume: 'Ion',
-    varsta: 23,
+    name: 'Ionel',
+    surname: 'Ion',
+    age: 23,
+    city: 'Bucharest',
   })
 );
 
