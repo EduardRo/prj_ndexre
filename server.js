@@ -12,9 +12,8 @@ app.use(express.json({ exteded: false }));
 app.get('/', (req, res) =>
   res.json({
     name: 'Ionel',
-    surname: 'Ion',
-    age: 23,
-    city: 'Bucharest',
+    email: 'ion@gmail.com',
+    password: 'parola123',
   })
 );
 
