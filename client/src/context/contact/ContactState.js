@@ -13,7 +13,6 @@ import {
 } from '../types';
 
 const ContactState = (props) => {
-  console.log(props);
   const initialState = {
     contacts: [
       {
