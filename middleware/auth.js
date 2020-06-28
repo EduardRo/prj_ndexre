@@ -9,7 +9,7 @@ module.exports = function (req, res, next) {
   if (!token) {
     return res
       .status(401)
-      .json({ msg: 'Not token bitch, authorization denied you mtf!' });
+      .json({ msg: 'Not token bitch, authorization denied!' });
   }
 
   try {
